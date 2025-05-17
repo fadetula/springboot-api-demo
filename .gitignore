@@ -1,0 +1,15 @@
+# Ignore build artifacts and IDE settings
+.gradle/
+build/
+bin/
+out/
+
+# IDE-specific
+*.iml
+*.classpath
+*.project
+.settings/
+
+# Eclipse working files
+.metadata/
+
