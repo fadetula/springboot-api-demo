@@ -1,10 +1,15 @@
 package com.example.demo.service;
 
-import com.example.demo.model.User;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
+
 import org.springframework.stereotype.Service;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import com.example.demo.model.User;
 
 @Service
 public class UserService {
