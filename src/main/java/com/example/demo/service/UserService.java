@@ -33,4 +33,15 @@ public class UserService {
     public void deleteUser(String id) {
         users.remove(id);
     }
+
+    public Optional<User> updateUser(String id, User updatedUser) {
+        if (users.containsKey(id)) {
+            updatedUser.setId(id); // Preserve the existing ID
+            users.put(id, updatedUser);
+            return Optional.of(updatedUser);
+        } else {
+            return Optional.empty();
+        }
+    }
+
 }
